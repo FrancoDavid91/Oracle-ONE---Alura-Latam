@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>¿Alcohol o gasolina?</h3>
+    <script>
+        //con gasolina
+        document.write("<h5>Gasolina</h5>");
+        var capacidadGasolina = prompt("¿Cuántos litros de gasolina almacena el tanque del carro?");
+        document.write("El tanque de gasolina almacena: "+capacidadGasolina + " litros<br>");
+        var distanciaGasolina = prompt("¿Cuántos kilómetros va a recorrer con gasolina?");
+        document.write("Recorrido con gasolina [en kilómetros]:" + distanciaGasolina + "<br>");
+        var resultadoGasolina = (distanciaGasolina / capacidadGasolina);
+        document.write("La eficiencia del carro es " + resultadoGasolina + " kilómetros por litro de gasolina.<br>");
+        //con alcohol
+        document.write("<h5>Alcohol</h5>");
+        var capacidadAlcohol = prompt("¿Cuántos litros de alcohol almacena el tanque del carro?");
+        document.write("El tanque de alcohol almacena: "+capacidadAlcohol + " litros<br>");
+        var distanciaAlcohol = prompt("¿Cuántos kilómetros va a recorrer con alcohol?");
+        document.write("Recorrido con alcohol [en kilómetros]:" + distanciaAlcohol + "<br>");
+        var resultadoAlcohol = (distanciaAlcohol / capacidadAlcohol);
+        document.write("La eficiencia del carro es " + resultadoAlcohol + " kilómetros por litro de alcohol.<br>");
+    </script>
+</body>
+</html>
