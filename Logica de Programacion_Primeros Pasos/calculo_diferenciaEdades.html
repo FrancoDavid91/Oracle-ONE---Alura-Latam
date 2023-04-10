@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Diferencia de Edades</h1>
+
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<hr>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(message){
+            document.write("<big>");
+            document.write(message);
+            document.write("</big>");
+            saltarLinea();
+        }
+
+        var edad1 = prompt("Introduce la edad de la primera persona");
+        var edad2 = prompt("Introduce la edad de la segunda persona");
+
+        var diferencia = Math.abs(edad1 - edad2);
+
+        imprimir("Edad de la primera persona: " + edad1);
+        imprimir("Edad de la segunda persona: 40" + edad2);
+        imprimir("La diferencia de edad es: " + diferencia);
+        
+    </script>
+</body>
+
+</html>
