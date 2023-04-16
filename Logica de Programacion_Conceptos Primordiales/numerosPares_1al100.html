@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MOSTRAR NUMEROS PARES DEL 1 AL 100</h1>
+    <script>
+        function saltarLinea() {
+            document.write("<br>");
+            document.write("<hr>");
+            document.write("<br>");
+        }
+
+        function imprimir(message) {
+            document.write(message);
+            saltarLinea();
+        }
+
+        function calcularPares() {
+            var numero = 1;
+            var contador = 0;
+            while (numero <= 100) {
+                if (numero % 2 == 0) {
+                    imprimir(numero);
+                    contador++;
+                }
+                numero++;
+            }
+            imprimir("El total de numeros pares es: " + contador);
+        }
+
+        calcularPares();
+        imprimir("FIN")
+    </script>
+
+</body>
+</html>
